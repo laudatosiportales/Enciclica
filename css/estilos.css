@@ -1,0 +1,232 @@
+:root{
+    --fuentePrincipal: 'Sniglet', cursive;
+    --fuenteSecundaria: 'Merriweather', serif;
+    --blanco: #ffffff;
+    --verdeOscuro: #134611;
+    --amarillo: #e0ca3c;
+    --anaranjado: #f18f01;
+    --verde: #119822;
+    --azul: #083d77;
+}
+html {
+    box-sizing: border-box;
+    /* Tamaño base para la fuente a 10px */
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 2rem;
+    line-height: 2;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffd65e+64,ffd65e+74,ffd65e+79,febf04+100 */
+    background: #ffd65e; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ffd65e 64%, #ffd65e 74%, #ffd65e 79%, #febf04 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #ffd65e 64%,#ffd65e 74%,#ffd65e 79%,#febf04 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #ffd65e 64%,#ffd65e 74%,#ffd65e 79%,#febf04 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+h1 {
+    color: var(--verdeOscuro);
+    text-align: center;
+    font-size: 4rem;
+    font-family: var(--fuentePrincipal);
+}
+img {
+    max-width: 100%;
+}
+p {
+    font-size: 1.8rem;
+    font-family: var(--fuenteSecundaria), Helvetica, sans-serif;
+}
+.header {
+    display: grid;
+    justify-content: center;
+    background-color: var(--blanco);
+}
+.barra {
+    background-color: var(--verde);
+    padding: 1rem 0;
+}
+.barra .nav {
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    justify-content: center;
+}
+.barra .nav a {
+    font-family: var(--fuentePrincipal);
+    font-size: 3rem;
+    text-align: center;
+    color: var(--blanco);
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+}
+.barra .nav a:hover {
+    color: var(--verdeOscuro);
+}
+.principal {
+    /* display: grid;
+    grid-template-rows: repeat(2, 30%);
+    justify-content: center;
+    grid-gap: 2rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.principal img{
+    max-width: 80%;
+    /* width: 90%; */
+    /* grid-row: 1 / 2; */
+    margin: 0 auto;
+    border: 10px solid var(--anaranjado);
+    -webkit-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, .65);
+    -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, .65);
+    box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, .65);
+}
+.principal p {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+    /* grid-row: 2 / 3; */
+    text-align: justify;
+    padding: 1rem;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px){
+    .principal {
+        /* display: grid;
+        grid-template-columns: repeat(2, 50%); */
+        flex-direction: row;
+        justify-content: center;
+    }
+    .principal p {
+        /* grid-column: 1 / 2; */
+        text-align: justify;
+        padding: 2rem;
+    }
+    .principal img{
+        max-width: 40%;
+        width: 40%;
+        /* grid-column: 2 / 3; */
+        /* padding: 2rem; */
+        margin-left: 3rem;
+    }
+}
+.imgcentro{
+    margin: 0 auto;
+    padding: 2rem;
+}
+.imgcentro img{
+    border-radius: 10px;
+    border: 10px solid var(--anaranjado);
+    -webkit-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, .65);
+    -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, .65);
+    box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, .65);
+}
+@media(min-width: 768px){
+    .imgcentro img{
+        width: 80%;
+        height: 80%;
+}
+}
+@media (min-width: 768px){
+    .imgcentro{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+}
+.formulario{
+    display: flex;
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    border: .2rem solid var(--verdeOscuro);
+}
+.formulario h2{
+    text-align: center;
+}
+.formulario ul li{
+    justify-content: center;
+}
+.formulario .campo{
+    display: block;
+    /* flex-wrap: wrap; */
+}
+.formulario {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem;
+    background-color: #DEEDF5;
+    color: var(--verdeOscuro);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, .65);
+    -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, .65);
+    box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, .65);
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+}
+@media (min-width: 768px){
+    .formulario{
+        width: 50%;
+    }
+}
+.campo, 
+.campo2{
+    display: block;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+.campo label {
+    padding-right: 2rem;
+}
+.campo input[type="text"],
+.campo input[type="tel"] {
+    flex: 1;
+    height: 2.5rem;
+    width: 32rem;
+} 
+.campo2 input[type="mail"] {
+    flex: 1;
+    height: 2.5rem;
+    width: 25rem;
+} 
+.campo .check{
+    text-align: center;
+}
+.enviarform {
+    display: flex;
+    justify-content: center;
+}
+.boton {
+    background-color: var(--azul);
+    padding: 1.2rem 3rem;
+    border-radius: 0.3rem;
+    display: inline-block;
+    color: var(--blanco);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: .7rem;
+    border: none;
+    transition: background-color .3s ease-in-out;
+}
+.boton:hover{
+    cursor: pointer;
+    background-color: var(--verdeOscuro)
+}
+.footer{
+    background-color: var(--verde);
+    padding: 1rem 0;
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--blanco);
+}
+.copyright{
+    font-family: var(--fuenteSecundaria);
+}

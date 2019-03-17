@@ -1,48 +1,100 @@
-body{
+body {
+    background: #444;
     margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+    font-family: monospace;
 }
-h1{
-    font-size: 70px;
-    columns: #121212;;
+
+h1 {
+    color: #fff;
     text-align: center;
 }
-.contenedor{ 
-  width:100%;
+
+/*Estilos de la galeria*/
+
+.galeria {
+    max-width: 100%;
     margin: auto;
-}
-img{
-    width: 270px;
-    height: 270px;
-}
-.imagen_columna{
-    margin: 5px; 
-}
-.imagenes .contenedor{
-    display: grid;
-    }
-@media(min-width:520px){
-    .imagenes .contenedor{     
-  grid-template-columns: repeat(2,50%);
-    }
-}
-@media(min-width:728px){
-   .imagenes .contenedor{
-  grid-template-columns: repeat(3,33.3%);
-    }
-}
-@media(min-width:1024px){
-   .imagenes .contenedor{
+    list-style: none;
+    padding: 10px;
+    box-sizing: border-box;
     
-  grid-template-columns: repeat(4,25%);
-    }
-    .contenedor{
-         width: 1024px;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-@media(min-width:1200px){
-    .contenedor{
-         width: 1200px;
-    }
+
+.galeria li {
+    margin: 5px;
+}
+
+.galeria img {
+    width: 350px;
+    height: 300px;
+}
+
+/*Estilos del modal*/
+
+.modal {
+    display: none;
+}
+
+.modal:target {
+    
+    display: block;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal h3 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.imagen {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen a {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.imagen a:nth-child(2) {
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.imagen img {
+    width: 500px;
+    height: 100%;
+    max-width: 100%;
+    border: 7px solid #fff;
+    box-sizing: border-box;
+}
+
+.cerrar {
+    display: block;
+    background: #fff;
+    width: 70px;
+    height: 30px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    padding: 10px;
+    border-radius: 50%;
+    line-height: 25px;
 }

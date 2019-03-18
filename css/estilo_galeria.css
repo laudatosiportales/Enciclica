@@ -1,0 +1,139 @@
+:root{
+    --fuentePrincipal: 'Sniglet', cursive;
+    --fuenteSecundaria: 'Merriweather', serif;
+    --blanco: #ffffff;
+    --verdeOscuro: #134611;
+    --amarillo: #e0ca3c;
+    --anaranjado: #f18f01;
+    --verde: #119822;
+    --azul: #083d77;
+}
+body {
+    font-size: 2rem;
+    line-height: 2;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffd65e+64,ffd65e+74,ffd65e+79,febf04+100 */
+    background-image:linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/***************************************E N C A B E Z A D O  Y  P I E*******************************************/
+
+/**********************************************************************************************************/
+
+h1 {
+    color: var(--verdeOscuro);
+    text-align: center;
+    font-size: 4rem;
+    font-family: var(--fuentePrincipal);
+}
+h4 {
+    color: var(--blanco);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--fuentePrincipal);
+}
+
+/*Estilos de la galeria*/
+
+.galeria {
+    max-width: 100%;
+    margin: auto;
+    list-style: none;
+    padding: 10px;
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galeria li {
+    width: 350px;
+    height: 300px;
+    border: 10px solid var(--verde);
+    margin: 5px;
+}
+
+.galeria img {
+    width: 350px;
+    height: 300px;
+}
+
+.galeria li:hover {
+    border: 10px solid var(--verdeOscuro);
+    margin: 5px;
+    transition: border-color .3s ease-in-out;
+}
+
+
+/*Estilos del modal*/
+
+.modal {
+    display: none;
+}
+
+.modal:target {
+    
+    display: block;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal h3 {
+    font-family: var(--fuentePrincipal);
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    margin: 2px 0;
+}
+
+.imagengimena {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagengimena a {
+    color: var(--anaranjado);
+    font-size: 100px;
+    text-decoration: none;
+    margin: 0 20px;
+    
+}
+
+.imagengimena a:nth-child(2) {
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+    width: 800px;
+    height: 550px;
+}
+
+.imagengimena img {
+    width: 800px;
+    height: 550px;
+    max-width: 100%;
+    border: 7px solid var(--anaranjado);
+    box-sizing: border-box;
+}
+
+.cerrar {
+    font-family: var(--fuentePrincipal);
+    display: block;
+    background: var(--anaranjado);
+    width: 100px;
+    height: 30px;
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--verdeOscuro);
+    padding: 5px;
+    border-radius: 20%;
+    line-height: 25px;
+}

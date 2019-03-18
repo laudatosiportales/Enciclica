@@ -1,4 +1,3 @@
-/* @import "lesshat"; */
 :root{
     --blanco: #ffffff;
     --primario: #134611;
@@ -59,7 +58,18 @@ body{
     transition: color .2s ease-in-out;
 }
 .barra .nav a:hover {
-    color: var(--verdeOscuro);
+    /* color: var(--verdeOscuro); */
+    color: #96fd00;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #fff;
+    /* border-bottom: 2px solid var(--verde); */
+
+}
+
+.uno, 
+.dos, 
+.tres:hover{
+    border-bottom: 2px solid var(--verde);
 }
 @media (max-width: 768px) {
 
@@ -74,6 +84,10 @@ body{
                             "dos" 
                             "tres";
         justify-content: center;
+    }
+    .barra .nav img{
+    align-items: flex-start;
+    text-align: start;
     }
 }
 

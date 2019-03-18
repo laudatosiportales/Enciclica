@@ -12,11 +12,7 @@ body {
     font-size: 2rem;
     line-height: 2;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffd65e+64,ffd65e+74,ffd65e+79,febf04+100 */
-    background: #ffd65e; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #ffd65e 64%, #ffd65e 74%, #ffd65e 79%, #febf04 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #ffd65e 64%,#ffd65e 74%,#ffd65e 79%,#febf04 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #ffd65e 64%,#ffd65e 74%,#ffd65e 79%,#febf04 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-image:linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 /***************************************E N C A B E Z A D O  Y  P I E*******************************************/

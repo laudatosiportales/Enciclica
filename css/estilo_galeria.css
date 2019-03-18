@@ -16,42 +16,7 @@ body {
 }
 
 /***************************************E N C A B E Z A D O  Y  P I E*******************************************/
-.header {
-    display: grid;
-    justify-content: center;
-    background-color: var(--blanco);
-}
-.barra {
-    background-color: var(--verde);
-    padding: 1rem 0;
-}
-.barra .nav {
-    display: grid;
-    grid-template-columns: repeat(3, 33.33%);
-    justify-content: center;
-}
-.barra .nav a {
-    font-family: var(--fuentePrincipal);
-    font-size: 3rem;
-    text-align: center;
-    color: var(--blanco);
-    text-decoration: none;
-    transition: color .2s ease-in-out;
-}
-.barra .nav a:hover {
-    color: var(--verdeOscuro);
-}
 
-.footer{
-    background-color: var(--verde);
-    padding: 1rem 0;
-    margin-top: 2rem;
-    text-align: center;
-    color: var(--blanco);
-}
-.copyright{
-    font-family: var(--fuenteSecundaria);
-}
 /**********************************************************************************************************/
 
 h1 {
@@ -126,14 +91,14 @@ h4 {
     margin: 2px 0;
 }
 
-.imagen {
+.imagengimena {
     max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.imagen a {
+.imagengimena a {
     color: var(--anaranjado);
     font-size: 100px;
     text-decoration: none;
@@ -141,7 +106,7 @@ h4 {
     
 }
 
-.imagen a:nth-child(2) {
+.imagengimena a:nth-child(2) {
     margin: 0;
     height: 100%;
     flex-shrink: 2;
@@ -149,7 +114,7 @@ h4 {
     height: 550px;
 }
 
-.imagen img {
+.imagengimena img {
     width: 800px;
     height: 550px;
     max-width: 100%;

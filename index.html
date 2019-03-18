@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Sitio web sobre la Encíclica Laudato Si'" />
+    <meta name ="keywords" content="papa Francisco, Laudato Si', Encíclica, católicos, Medioambiente, siguatepeque, unicah, honduras">
+    <meta http-equiv="author" content ="Abel Consuegra, Gimena Sánchez, Eduardo Cálix">
+    <meta http-equiv="pragma" content="no-cache" />
+    <title>Laudato Si'</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Sniglet" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- esto sirve para establecer un ícono de pestaña -->
+    <link rel="shortcut icon" href="img/icon.ico">
+</head>
+<body>
+    <!-- Header de la página, solo posee la imagen de logo de Laudato Si' -->
+    <header class="header">
+        <img src="img/2.jpg" alt="Logotipo del Laudato Si'">
+    </header>
+
+    <!-- Barra de navegación -->
+    <div class="barra">
+        <nav class="nav">
+            <a href="#">Inicio</a>
+            <a href="#">Galería</a>
+            <a href="#">Laudato Si'</a>      
+        </nav>
+    </div>
+
+    <!-- Contenido principal. párrafo de información junto con imagen del papa Francisco -->
+    <main>
+        <h1>Encíclica Laudato Si'</h1>
+        <div class="principal">
+            <img src="img/papa.png" alt="Papa Francisco" class="imgpapa">
+            <div class="texto-principal">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin neque tellus, eleifend vel vestibulum interdum, pellentesque non ante. Vestibulum in lectus vitae tellus convallis tempus. In ut pretium lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam ultricies eleifend enim eget volutpat. Aenean purus tellus, lobortis ac auctor et, suscipit ac urna. Aliquam justo erat, condimentum ornare semper non, laoreet non mauris.
+                <br>Aliquam quis nisi sed diam euismod accumsan. Ut elementum tortor eget nunc vestibulum dictum. Sed id elit dapibus, sagittis erat nec, cursus nisl. Duis malesuada odio lorem, et condimentum arcu feugiat quis. In hac habitasse platea dictumst. Sed faucibus rhoncus augue, nec fringilla nunc rutrum eu. Sed id lacinia turpis. In sed nunc tortor. Quisque placerat eros sem, vel convallis risus mollis non. Nam tempor erat quis arcu faucibus, vel laoreet lacus pellentesque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum mattis tellus elit. Sed congue massa sed aliquet dictum. Sed a enim feugiat, rhoncus ipsum et, aliquam nunc. In ut sem erat.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Contenedor que posee una imagen de Laudato Si' seguida de un párrafo de contenido -->
+    <div class="contenedor-centro">
+        <div class="imgcentro">
+            <img src="img/laudato1.jpg" alt="Laudato Si' Papa Francisco">
+        </div>
+        <div class="textocentro">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a arcu ultricies, iaculis tellus at, tincidunt nunc. Aliquam sodales et lectus id pretium. Suspendisse eu purus quis nulla feugiat malesuada lobortis ac dui. Mauris sed nibh non quam mollis scelerisque. Nunc eu nibh sit amet nisl mollis maximus sed sit amet tortor. Mauris ac est sed erat accumsan fermentum sit amet id sapien. Nullam quis orci dui. Ut eget tincidunt nunc, non mollis tortor. Pellentesque placerat sit amet nisl vel aliquet. Sed convallis ante sit amet volutpat vulputate. Proin at mauris egestas, malesuada mauris quis, accumsan arcu. Phasellus tristique lobortis ligula, sit amet elementum mauris imperdiet vitae. Nam vel suscipit nisi. Donec lacinia dictum vulputate. Vivamus viverra mauris vitae nisi tristique tristique. Cras suscipit bibendum leo, non egestas erat tristique nec.
+
+                Etiam nec auctor odio. Nulla placerat consectetur luctus. Duis blandit eros nec mi gravida vehicula. Sed fermentum ligula quis felis sagittis, eget facilisis ante fermentum. Mauris eget dapibus lacus. Nam et nibh mattis, venenatis metus porttitor, rutrum nisl. Maecenas iaculis mauris dolor, id lobortis risus malesuada auctor. Aenean aliquam blandit sapien, vitae ornare dui ultrices id. Morbi at sem dapibus, eleifend eros ac, placerat urna. Nullam auctor ex ut nisi porttitor viverra in vel lectus. In cursus euismod molestie.
+            </p>
+        </div>
+    </div>
+
+    <!-- Formulario. un formulario de compromiso ante el Laudato Si' que incluye un título y campos para introducir información -->
+    <div class="formulario">
+         <h2>Respondiendo al llamado urgente del Papa Francisco en Laudato Si’, me comprometo a: </h2>
+         <ul class="compromiso">
+             <li>Rezar por y con la creación</li>
+             <li>Vivir con sencillez</li>
+             <li>Abogar por el cuidado de nuestra casa común</li>
+         </ul>
+
+         <!-- definimos los campos del formulario  -->
+        <form action="#">
+            <div class="contenedor-campos">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" placeholder="Ingrese su Nombre">
+                </div>
+                <div class="campo">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" placeholder="Ingrese su Apellido">
+                </div>
+                <div class="campo2">
+                    <label for="correo">Correo electrónico</label>
+                    <input type="mail" name="correo" placeholder="tucorreo@dominio.com" required>
+                </div>
+                <div class="campo">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" name="ciudad" placeholder="Ciudad">
+                </div>
+                <div class="campo">
+                    <label for="region">Región</label>
+                    <input type="text" name="region" placeholder="Región">
+                </div>
+                <div class="campo">
+                    <label for="pais">País</label>
+                    <select name="pais" id="pais">
+                        <option value="Honduras">Honduras</option>
+                        <option value="ElSalvador">El Salvador</option>
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="CostaRica">Costa Rica</option>
+                        <option value="Panama">Panamá</option>
+                    </select>
+                </div>
+                <div class="campo check">
+                    <!-- "&nbsp" sirve para agregar espacio -->
+                    <input type="checkbox" value="contact">&nbsp Acepto que me contacten por email<br>
+                    <input type="checkbox" value="term" required>&nbsp Acepto los <span><a href="#"> términos del servicio</a></span><br>
+                </div>
+            </div>
+            <!-- botón para enviar los datos del formulario  -->
+            <div class="enviarform">
+                <input class="boton" type="submit" value="COMPROMETERSE AHORA"> 
+            </div>
+        </form>
+    </div>
+    
+    <!-- Footer. contiene el texto de copyright de la página -->
+    <footer class="footer">
+        <p class="copyright">
+            Laudato Si' - Todos los derechos reservados 2019.
+        </p>
+    </footer>
+
+</body>
+</html>

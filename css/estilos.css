@@ -1,3 +1,4 @@
+/* Hoja de Estilo para la página Laudato Si' - Portales Web 2019 */
 :root{
     --fuentePrincipal: 'Sniglet', cursive;
     --fuenteSecundaria: 'Merriweather', serif;
@@ -20,12 +21,15 @@ body {
     font-size: 2rem;
     line-height: 2;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffd65e+64,ffd65e+74,ffd65e+79,febf04+100 */
-    background: #ffd65e; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #ffd65e 64%, #ffd65e 74%, #ffd65e 79%, #febf04 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #ffd65e 64%,#ffd65e 74%,#ffd65e 79%,#febf04 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #ffd65e 64%,#ffd65e 74%,#ffd65e 79%,#febf04 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+/*    background: #ffd65e; /* Old browsers */
+/*    background: -moz-linear-gradient(-45deg, #ffd65e 64%, #ffd65e 74%, #ffd65e 79%, #febf04 100%); /* FF3.6-15 */
+/*    background: -webkit-linear-gradient(-45deg, #ffd65e 64%,#ffd65e 74%,#ffd65e 79%,#febf04 100%); /* Chrome10-25,Safari5.1-6 */
+/*    background: linear-gradient(135deg, #ffd65e 64%,#ffd65e 74%,#ffd65e 79%,#febf04 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+/*    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=1 ); IE6-9 fallback on horizontal gradient*/
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cde2 100%);
 }
+
+/* Se le asigna a todos los h1  un estilo */
 h1 {
     color: var(--verdeOscuro);
     text-align: center;
@@ -39,6 +43,7 @@ p {
     font-size: 1.8rem;
     font-family: var(--fuenteSecundaria), Helvetica, sans-serif;
 }
+/* Definimos la posición del header */
 .header {
     display: grid;
     justify-content: center;
@@ -48,10 +53,18 @@ p {
     background-color: var(--verde);
     padding: 1rem 0;
 }
-.barra .nav {
-    display: grid;
+/* .barra .nav {
+    /* display: grid;
     grid-template-columns: repeat(3, 33.33%);
-    justify-content: center;
+    justify-content: center; */
+    /* display: block; 
+} */
+@media (min-width: 768px){
+    .barra .nav {
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%);
+        justify-content: center;
+    }
 }
 .barra .nav a {
     font-family: var(--fuentePrincipal);
@@ -60,10 +73,12 @@ p {
     color: var(--blanco);
     text-decoration: none;
     transition: color .2s ease-in-out;
+    display: block;
 }
 .barra .nav a:hover {
     color: var(--verdeOscuro);
 }
+/* definimos la posición y estilo del contenedor principal */
 .principal {
     /* display: grid;
     grid-template-rows: repeat(2, 30%);
@@ -73,6 +88,7 @@ p {
     flex-direction: column;
     align-items: center;
 }
+/* imagen del texto principal (imagen del papa Francisco) */
 .principal img{
     max-width: 80%;
     /* width: 90%; */
@@ -82,7 +98,14 @@ p {
     -webkit-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, .65);
     -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, .65);
     box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, .65);
+    transition: .3s border-color;
 }
+/* al pasar el mouse sobre la imagen, ésta cambiará el color del borde y el puntero será el de selección */
+.principal img:hover{
+    border-color: var(--verde);
+    cursor: pointer;
+}
+/* Estilo del párrafo que se encuentra dentro del contenido principal */
 .principal p {
     max-width: 1200px;
     width: 95%;
@@ -92,8 +115,10 @@ p {
     padding: 1rem;
     padding-top: 2rem;
     font-size: 1.5rem;
+    color: var(--verdeOscuro);
 }
 
+/* Media Query para darles características distintas al contenido principal para pantallas con resolución mayor a 768px */
 @media (min-width: 768px){
     .principal {
         /* display: grid;
@@ -114,30 +139,62 @@ p {
         margin-left: 3rem;
     }
 }
+/* Estilo para el contenedor del centro de la página */
+.contenedor-centro{
+    width:90%;
+    margin: 0 auto;
+    border-radius: 1%;
+    border: .2rem solid var(--verdeOscuro);
+    padding: 3rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    /* color degradado de fondo */
+    background: rgba(210,255,82,1);
+    background: -moz-linear-gradient(left, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(210,255,82,1)), color-stop(100%, rgba(145,232,66,1)));
+    background: -webkit-linear-gradient(left, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+    background: -o-linear-gradient(left, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+    background: -ms-linear-gradient(left, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+    background: linear-gradient(to right, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842', GradientType=1 );
+}
+/* contenedor de la imagen perteneciente al contenido del centro */
 .imgcentro{
     margin: 0 auto;
-    padding: 2rem;
+    padding-bottom: 2rem;
 }
+/* imagen perteneciente al contenido del centro */
 .imgcentro img{
     border-radius: 10px;
     border: 10px solid var(--anaranjado);
     -webkit-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, .65);
     -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, .65);
     box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, .65);
+    transition: .3s border-color;
 }
+/* Estilo para que el color del borde y el cursor cambien al pasar el puntero sobre la imagen */
+.imgcentro img:hover{
+    border-color: var(--verde);
+    cursor: pointer;
+}
+/* Media Query para definir la imagen del centro en pantalla con resolución mayor a 768px */
 @media(min-width: 768px){
     .imgcentro img{
         width: 80%;
         height: 80%;
-}
-}
-@media (min-width: 768px){
+    }
     .imgcentro{
         display: flex;
         justify-content: center;
         margin-top: 2rem;
     }
 }
+/* definimos el estilo a utilizar en  los párrafos dentro del texto del centro */
+.textocentro p{
+    text-align: justify;
+    color: var(--verdeOscuro);
+}
+/* Estilo perteneciente al formulario de compromiso de Laudato Si' */
 .formulario{
     display: flex;
     max-width: 100%;
@@ -147,16 +204,20 @@ p {
     align-items: center;
     border: .2rem solid var(--verdeOscuro);
 }
+/* posicion de los h2 que están dentro del formulario */
 .formulario h2{
     text-align: center;
 }
+/* estilo de las listas dentro del formulario */
 .formulario ul li{
     justify-content: center;
 }
+/* Estilo de los campos del formulario */
 .formulario .campo{
     display: block;
     /* flex-wrap: wrap; */
 }
+/* Estilo y posición del formulario  */
 .formulario {
     margin: 0 auto;
     max-width: 1200px;
@@ -170,20 +231,24 @@ p {
     margin-bottom: 3rem;
     padding-bottom: 3rem;
 }
+/* Media Query para establecer el estilo del formulario en pantallas con resolucion mayor a 768px */
 @media (min-width: 768px){
     .formulario{
         width: 50%;
     }
 }
+/* Estilo para los cambios del formulario, tanto para el tipo de campo 1 como para el tipo del campo 2 */
 .campo, 
 .campo2{
     display: block;
     margin-bottom: 1rem;
     align-items: center;
 }
+/* estilo de los label del los campos */
 .campo label {
     padding-right: 2rem;
 }
+/* estilo de los input del formulario */
 .campo input[type="text"],
 .campo input[type="tel"] {
     flex: 1;
@@ -198,10 +263,12 @@ p {
 .campo .check{
     text-align: center;
 }
+/* posicion del contenedor del botón de enviar */
 .enviarform {
     display: flex;
     justify-content: center;
 }
+/* estilo del botón de enviar formulario */
 .boton {
     background-color: var(--azul);
     padding: 1.2rem 3rem;
@@ -216,10 +283,12 @@ p {
     border: none;
     transition: background-color .3s ease-in-out;
 }
+/* estilo para el botón al pasar el puntero sobre él */
 .boton:hover{
     cursor: pointer;
     background-color: var(--verdeOscuro)
 }
+/* Estilo y posición del footer de la página */
 .footer{
     background-color: var(--verde);
     padding: 1rem 0;
@@ -227,6 +296,7 @@ p {
     text-align: center;
     color: var(--blanco);
 }
+/* estilo del texto del footer (copyright) */
 .copyright{
     font-family: var(--fuenteSecundaria);
 }

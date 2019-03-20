@@ -457,17 +457,19 @@ p {
 .campo label {
     padding-right: 2rem;
 }
+
 /* estilo de los input del formulario */
 .campo input[type="text"],
 .campo input[type="tel"] {
     flex: 1;
+    padding-inline-start: 10px;
     height: 2.5rem;
     width: 32rem;
 } 
 .campo2 input[type="mail"] {
     flex: 1;
     height: 2.5rem;
-    width: 25rem;
+    width: 26rem;
 } 
 .campo .check{
     text-align: center;
